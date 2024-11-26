@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portfolio.Projekty"
+             Title="Projekty">
+    <ScrollView>
+
+        <Grid Margin="30, 0" RowSpacing="20" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Pierwszy projekt -->
+
+            <Rectangle
+                Grid.Row="0"
+                Grid.Column="0"
+                RadiusX="10"
+                RadiusY="10"
+                StrokeThickness="4"
+                Stroke="{StaticResource Primary}"
+                Fill="{StaticResource Secondary}"
+            />
+
+            <Label
+                TextColor="{StaticResource Primary}"
+                Grid.Row="0"
+                Grid.Column="0"
+                Padding="5"
+                Text="Platforma społecznościowa"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalOptions="Center"
+            />
+
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Padding="10, 70"
+                Text="Aplikacja umożliwiająca użytkownikom tworzenie profili, dodawanie postów, komentowanie i polubienia. Implementacja autentykacji użytkowników oraz zarządzanie bazą danych."
+            />
+
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="Vue.js | Laravel | MySQL"
+                Margin="10, 50"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                TextColor="{StaticResource Tertiary}"
+            />
+
+            <Button
+                Text="Czytaj Więcej"
+                Padding="10"
+                CornerRadius="10"
+                VerticalOptions="End"
+            />
+
+            <!-- Drugi projekt -->
+
+            <Rectangle
+                Grid.Row="1"
+                Grid.Column="0"
+                RadiusX="10"
+                RadiusY="10"
+                StrokeThickness="4"
+                Stroke="{StaticResource Primary}"
+                Fill="{StaticResource Secondary}"
+            />
+
+            <Label
+                TextColor="{StaticResource Primary}"
+                Grid.Row="1"
+                Grid.Column="0"
+                Padding="5"
+                Text="System zarządzania projektami"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalOptions="Center"
+            />
+
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Padding="10, 70"
+                Text="Aplikacja do zarządzania projektami z funkcjonalnością przypisywania zadań, śledzenia postępów i generowania raportów. Integracja z zewnętrznymi API do synchronizacji kalendarza."
+            />
+
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="React | Node.js | PostgreSQL"
+                Margin="10, 50"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                TextColor="{StaticResource Tertiary}"
+            />
+
+            <Button
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="Czytaj Więcej"
+                Padding="10"
+                CornerRadius="10"
+                VerticalOptions="End"
+            />
+
+            <!-- Trzeci projekt -->
+
+            <Rectangle
+                Grid.Row="2"
+                Grid.Column="0"
+                RadiusX="10"
+                RadiusY="10"
+                StrokeThickness="4"
+                Stroke="{StaticResource Primary}"
+                Fill="{StaticResource Secondary}"
+            />
+
+            <Label
+                TextColor="{StaticResource Primary}"
+                Grid.Row="2"
+                Grid.Column="0"
+                Padding="5"
+                Text="Blog osobisty z funkcją CMS"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalOptions="Center"
+            />
+
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                Padding="10, 70"
+                Text="Aplikacja do tworzenia i zarządzania treściami na blogu. Umożliwia użytkownikom łatwe dodawanie wpisów, edycję oraz publikowanie postów w systemie zarządzania treścią (CMS)."
+            />
+
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                Text=" PHP | Laravel | MySQL | JavaScript"
+                Margin="10, 50"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="{StaticResource Tertiary}"
+                VerticalOptions="End"
+            />
+
+            <Button
+                Grid.Row="2"
+                Grid.Column="0"
+                Text="Czytaj Więcej"
+                Padding="10"
+                CornerRadius="10"
+                VerticalOptions="End"
+            />
+
+        </Grid>
+
+    </ScrollView>
+</ContentPage>

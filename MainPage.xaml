@@ -1,0 +1,92 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portfolio.MainPage"
+             Title="Portfolio">
+
+    <ScrollView>
+        <StackLayout>
+
+            <Grid RowSpacing="20" Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="*" />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+
+                <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                Text="Hej, Jestem Marek"
+                FontSize="Title"
+                TextColor="{DynamicResource Primary}"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+            />
+
+                <Label Grid.Row="1" Text="Tworzę innowacyjne aplikacje internetowe, które łączą estetyczny design z funkcjonalnością i wydajnością. Specjalizuję się w pracy z nowoczesnymi technologiami zarówno po stronie front-endu, jak i back-endu, zapewniając kompleksowe rozwiązania dla Twoich potrzeb. Jeśli szukasz kogoś, kto pomoże Ci w realizacji Twoich pomysłów w Internecie, dobrze trafiłeś!" />
+
+                <StackLayout Grid.Row="2">
+
+                    <HorizontalStackLayout HorizontalOptions="Center">
+
+                        <Label Text="Pracuje teraz nad:" FontAttributes="Italic"  FontSize="Medium"  />
+
+                        <Label Padding="5, 0" TextColor="{DynamicResource Tertiary}" FontSize="Medium"  FontAttributes="Bold" Text="Aplikacja e-commerce" />
+
+                    </HorizontalStackLayout>
+
+                    <Label Padding="0, 10" Text="Pełna aplikacja e-commerce z możliwością zarządzania produktami, zamówieniami i płatnościami online. Odpowiedzialny za zarówno front-end, jak i back-end, w tym integrację z systemem płatności Stripe." />
+
+                    <StackLayout>
+                        <StackLayout>
+
+                            <Label Text="Technologies" TextColor="{DynamicResource Tertiary}" FontAttributes="Bold" FontSize="Medium" />
+
+                            <ScrollView
+                            HeightRequest="200"
+                        >
+                                <ListView>
+                                    <ListView.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>React</x:String>
+                                            <x:String>Node.js</x:String>
+                                            <x:String>MongoDB</x:String>
+                                            <x:String>Stripe API</x:String>
+                                            <x:String>Laravel</x:String>
+                                            <x:String>MySQL</x:String>
+                                            <x:String>PostgreSQL</x:String>
+                                            <x:String>PHP</x:String>
+                                        </x:Array>
+                                    </ListView.ItemsSource>
+                                </ListView>
+                            </ScrollView>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+
+
+                <StackLayout Grid.Row="4">
+
+                    <Label Text="Dowiedz się więcej poniżej" TextColor="{DynamicResource Tertiary}" />
+
+                    <Button Text="Projekty" Margin="0,5" Clicked="Button_Clicked_1" />
+                    <Button Text="O Mnie" Margin="0,5" Clicked="Button_Clicked_2" />
+                    <Button Text="Kontakt" Margin="0,5" Clicked="Button_Clicked_3" />
+
+                </StackLayout>
+
+            </Grid>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

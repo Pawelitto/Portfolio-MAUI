@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portfolio.Formularz"
+             Title="Kontakt">
+    <VerticalStackLayout>
+        <Grid Margin="20" RowSpacing="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Text="Bądź na bieżąco!" FontAttributes="Bold" FontSize="Title" HorizontalOptions="Center" />
+            <Label Grid.Row="1" Text="Podaj swoje dane kontaktowe aby żaden projekt Cię nie ominął ;)" />
+
+            <Entry x:Name="name_entry" Grid.Row="2" Placeholder="Imię / Nazwisko" />
+
+            <Entry x:Name="phone_entry" Grid.Row="3" Placeholder="Numer telefonu" Keyboard="Telephone" />
+
+            <Button Grid.Row="4" Text="Dołącz do mnie" Clicked="Button_Clicked" />
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
